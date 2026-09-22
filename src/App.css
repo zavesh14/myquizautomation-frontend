@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.camera-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.camera-feed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.capture-box {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 25%;
+  height: 50%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  pointer-events: none;
+}
+.bottom-panel {
+  padding: 20px;
+  background-color: #111;
+  text-align: center;
+}
+.answer-box {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+.answer-box h1 {
+  margin: 0;
+  color: #fff;
+}
+.button-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 18px;
+}
+button {
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-start {
+  background-color: #fff;
+  color: #000;
+}
+.btn-stop {
+  background-color: #aa2222;
+  color: #fff;
+}
+.btn-test {
+  background-color: #4caf50;
+  color: #fff;
+}
