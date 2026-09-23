@@ -19,8 +19,13 @@ export default function App() {
     async function setupCamera() {
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
-          video: { facingMode: "environment" }, // Use back camera on phones
-        });
+          video: {
+              facingMode: "environment",
+               width:  { ideal: 1920 },
+               height: { ideal: 1080 },
+               frameRate: { ideal: 30 }
+           }
+         });
         if (videoRef.current) {
           videoRef.current.srcObject = stream;
         }
